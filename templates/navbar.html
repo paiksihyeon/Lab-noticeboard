@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>게시판 페이지</title>
+    <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'navbar.css' %}">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom custom-navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand custom-brand" href="{% url 'pybo:index' %}">Main</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 custom-nav">
+                {% if user.is_authenticated %}
+                <li class="nav-item">
+                    <a class="nav-link custom-link" href="{% url 'common:logout' %}">{{ user.username }} (로그아웃)</a>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                    <a class="nav-link custom-link" href="{% url 'common:login' %}">로그인</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link custom-link" href="{% url 'common:signup' %}">회원가입</a>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<script src="{% static 'bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>

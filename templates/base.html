@@ -1,0 +1,32 @@
+{% load static %}
+
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{% static 'base.css' %}">
+    {% block extra_css %}{% endblock %}
+    <title>게시글 등록 페이지</title>
+</head>
+<body>
+
+{% include "navbar.html" %}
+<div class="centered-wrapper">
+    <div class="centered-container">
+<!--        <img src="{% static 'img/main.png' %}">-->
+        <h1 class="display-4 text-with-background">랩실 게시판 페이지</h1>
+        <p class="lead text-with-background">랩실에 관한 게시물을 등록하세요.</p>
+    </div>
+</div>
+{% block content %}
+{% endblock %}
+
+<!-- Bootstrap JS -->
+<script src="{% static 'base.css' %}"></script>
+z
+<!-- 추가 스크립트 블록 -->
+{% block script %}
+{% endblock %}
+</body>
+</html>
