@@ -12,13 +12,17 @@
 
 .centered-container {
     color: white;
-    text-align: center;
-    max-width: 960px;
+
     padding: 20px;
     box-sizing: border-box;
 }
 
  .main-image {
     width: 100%
-    height: 500px
+    height: 500px;
  }
+
+ .text-with-background {
+    text-align: center;
+    margin: 40px;
+}
