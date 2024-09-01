@@ -1,0 +1,97 @@
+.button-registration {
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration-line: none;
+    display : block;
+    background-color: #6495ED;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width : 165px;
+    text-align : center;
+}
+
+.button-registration:hover {
+    background-color: #87CEEB;
+    color: white;
+}
+
+.btn-search{
+    background-color: #6495ED;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration-line: none;
+}
+
+.btn-search:hover{
+    background-color: #87CEEB;
+    color: white;
+}
+
+.form-controls {
+    width : 200px;
+    padding : 6px 20px;
+}
+
+.div_right {
+    text-align : right;
+    display : block;
+}
+
+.input-groups {
+    position: relative;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+.div-inline-block{
+    display : inline-block;
+    width : 49%;
+}
+
+.div-inline{
+    display : inline-block;
+    width : 100%;
+    padding-bottom : 1%;
+}
+
+.div-center{
+    text-align: center;
+}
+.div-size70{
+    width:70%;
+    margin : 0 auto;
+}
+
+.table-align{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.page-link-1{
+    z-index: 3;
+    color: #fff;
+    background-color: #6495ED;
+    border-color: #6495ED;
+    padding: .375rem .75rem;
+    margin-left: -1px;
+    position: relative;
+    text-decoration-line: none;
+}
+
+.table-center{
+    background: #87CEEB;
+    color: white;
+}
+
+.text-start-2{
+    text-decoration-line: none;
+}
